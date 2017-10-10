@@ -1,4 +1,4 @@
-package ca.effenti.stream;
+package ca.effenti.tutorial.lambdastream;
 
 import java.util.Objects;
 

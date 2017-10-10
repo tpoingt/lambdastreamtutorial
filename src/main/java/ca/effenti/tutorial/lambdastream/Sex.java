@@ -1,4 +1,4 @@
-package ca.effenti.stream;
+package ca.effenti.tutorial.lambdastream;
 
 public enum Sex {
     MALE, FEMALE, OTHER;

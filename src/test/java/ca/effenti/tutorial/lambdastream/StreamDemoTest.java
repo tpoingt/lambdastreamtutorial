@@ -1,16 +1,13 @@
-package ca.effenti.stream;
+package java.ca.effenti.tutorial.lambdastream;
 
+import ca.effenti.tutorial.lambdastream.Person;
 import org.junit.Test;
 
 import java.util.List;
-import java.util.function.Consumer;
-import java.util.function.Supplier;
-import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
-import static ca.effenti.stream.Sex.FEMALE;
-import static ca.effenti.stream.Sex.MALE;
-import static org.junit.Assert.assertNotNull;
+import static ca.effenti.tutorial.lambdastream.Sex.FEMALE;
+import static ca.effenti.tutorial.lambdastream.Sex.MALE;
 
 
 public class StreamDemoTest {
@@ -25,5 +22,17 @@ public class StreamDemoTest {
             new Person("Stark", "Tony", MALE, 47)
             );
 
+
+
+
+    @Test
+    public void youKnowNothing(){
+        Stream.of("Rickon", "Bran", "Arya", "Sansa", "Jon", "??")
+                .map(name -> {
+                    System.out.println(name + " is a Stark !");
+                    return name;
+                });
+
+    }
 
 }
