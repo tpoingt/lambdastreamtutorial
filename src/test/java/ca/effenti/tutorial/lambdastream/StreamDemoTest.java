@@ -60,4 +60,15 @@ public class StreamDemoTest {
     public void shouldPrintStarkFamily() {
         fail("Implement Me !");
     }
+
+    @Test
+    public void shouldPrintAliveStarkFamily(){
+        fail("Implement Me !");
+    }
+
+    @Test
+    public void shouldPrintAliveStarkFamilyWithReference(){
+        fail("Implement Me !");
+    }
+
 }
