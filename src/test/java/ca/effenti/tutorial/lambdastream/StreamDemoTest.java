@@ -21,21 +21,22 @@ public class StreamDemoTest {
             new Person("Snow", "Jon", MALE, 22),
             new Person("Stark", "Robb", MALE, 19, false),
             new Person("Stark", "Tony", MALE, 47)
-            );
+    );
+
     @Test
-    public void shouldCreateSimplePrintlnLambda(){
+    public void shouldCreateSimplePrintlnLambda() {
         fail("Implement Me !");
     }
 
     @Test
-    public void shouldCreateSimplePrintlnLambdaWithBracket(){
+    public void shouldCreateSimplePrintlnLambdaWithBracket() {
         fail("Implement Me !");
     }
 
 
     @Test
     @Ignore
-    public void youKnowNothing(){
+    public void youKnowNothing() {
         starkFamily.stream()
                 .map(name -> {
                     System.out.println(name + " is a Stark !");
@@ -44,5 +45,19 @@ public class StreamDemoTest {
 
     }
 
+    @Test
+    @Ignore
+    public void youReallyKnowNothing(){
+        Stream.of("Rickon", "Bran", "Arya", "Sansa", "Jon", "??")
+                .map(name -> {
+                    System.out.println(name + " is a Stark !");
+                    return name;
+                }).findFirst();
+    }
 
+
+    @Test
+    public void shouldPrintStarkFamily() {
+        fail("Implement Me !");
+    }
 }
