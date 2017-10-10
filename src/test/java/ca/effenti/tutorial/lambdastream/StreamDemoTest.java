@@ -3,10 +3,11 @@ package ca.effenti.tutorial.lambdastream;
 import org.junit.Test;
 
 import java.util.List;
+import java.util.function.Consumer;
 
 import static ca.effenti.tutorial.lambdastream.Sex.FEMALE;
 import static ca.effenti.tutorial.lambdastream.Sex.MALE;
-import static org.junit.Assert.fail;
+import static org.junit.Assert.assertNotNull;
 
 
 public class StreamDemoTest {
@@ -22,12 +23,19 @@ public class StreamDemoTest {
             );
     @Test
     public void shouldCreateSimplePrintlnLambda(){
-        fail("Implement Me !");
+        Consumer<Person> printlnConsumer = person -> System.out.println(person + " is a Stark !");
+        assertNotNull(printlnConsumer);
+        printlnConsumer.accept(starkFamily.get(0));
     }
 
     @Test
     public void shouldCreateSimplePrintlnLambdaWithBracket(){
-        fail("Implement Me !");
+        Consumer<Person> printlnConsumer = person -> {
+            System.out.println(person + " is a Stark !");
+        };
+        assertNotNull(printlnConsumer);
+        printlnConsumer.accept(starkFamily.get(0));
+
     }
 
 
