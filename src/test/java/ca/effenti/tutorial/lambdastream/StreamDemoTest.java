@@ -107,4 +107,9 @@ public class StreamDemoTest {
     public void shouldGroupAliveStarkByOrigin() {
         fail("Implement Me !");
     }
+
+    @Test
+    public void shouldGroupAliveStarkFirstNameByOrigin() {
+        fail("Implement Me !");
+    }
 }
