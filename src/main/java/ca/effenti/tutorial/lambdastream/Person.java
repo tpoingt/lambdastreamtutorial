@@ -79,4 +79,8 @@ public class Person {
     public int getAge() {
         return age;
     }
+
+    public Origin getOrigin() {
+        return origin;
+    }
 }
