@@ -83,6 +83,10 @@ public class StreamDemoTest {
 
     @Test
     public void shouldReturnStarkFamilyUpperCase() {
-        fail("Implement Me !");
+        starkFamily.stream()
+                .map(Person::getFirstname)
+                .map(String::toUpperCase)
+                .forEach(System.out::println);
+
     }
 }
