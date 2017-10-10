@@ -4,6 +4,9 @@ import org.junit.Ignore;
 import org.junit.Test;
 
 import java.util.List;
+import java.util.Map;
+import java.util.Set;
+import java.util.stream.Collectors;
 
 import static ca.effenti.tutorial.lambdastream.Origin.GOT;
 import static ca.effenti.tutorial.lambdastream.Origin.MARVEL;
@@ -104,6 +107,21 @@ public class StreamDemoTest {
 
     @Test
     public void shouldGroupAliveStarkByOrigin() {
-        fail("Implement Me !");
+        Map<Origin, List<Person>> result = starkFamily.stream()
+                .filter(Person::isAlive)
+                .collect(Collectors.groupingBy(Person::getOrigin));
+        System.out.println(result);
+    }
+
+    @Test
+    public void shouldGroupAliveStarkFirstNameByOrigin() {
+        Map<Origin, Set<String>> result = starkFamily.stream()
+                .filter(Person::isAlive)
+                .collect(Collectors.groupingBy(
+                        Person::getOrigin,
+                        Collectors.mapping(
+                                Person::getFirstname,
+                                Collectors.toSet())));
+        System.out.println(result);
     }
 }
