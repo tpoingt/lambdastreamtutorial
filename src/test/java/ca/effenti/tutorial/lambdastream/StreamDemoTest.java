@@ -96,5 +96,8 @@ public class StreamDemoTest {
         fail("Implement Me !");
     }
 
-
+    @Test
+    public void shouldGetStarkAgeStats(){
+        fail("Implement Me !");
+    }
 }
