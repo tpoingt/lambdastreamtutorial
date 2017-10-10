@@ -1,5 +1,6 @@
 package ca.effenti.tutorial.lambdastream;
 
+import org.junit.Assert;
 import org.junit.Test;
 
 import java.util.List;
@@ -7,6 +8,7 @@ import java.util.stream.Stream;
 
 import static ca.effenti.tutorial.lambdastream.Sex.FEMALE;
 import static ca.effenti.tutorial.lambdastream.Sex.MALE;
+import static org.junit.Assert.*;
 
 
 public class StreamDemoTest {
@@ -20,9 +22,15 @@ public class StreamDemoTest {
             new Person("Stark", "Robb", MALE, 19, false),
             new Person("Stark", "Tony", MALE, 47)
             );
+    @Test
+    public void shouldCreateSimplePrintlnLambda(){
+        fail("Implement Me !");
+    }
 
-
-
+    @Test
+    public void shouldCreateSimplePrintlnLambdaWithBracket(){
+        fail("Implement Me !");
+    }
 
 
 }
