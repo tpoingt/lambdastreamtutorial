@@ -4,6 +4,7 @@ import org.junit.Ignore;
 import org.junit.Test;
 
 import java.util.List;
+import java.util.stream.Collectors;
 
 import static ca.effenti.tutorial.lambdastream.Origin.GOT;
 import static ca.effenti.tutorial.lambdastream.Origin.MARVEL;
@@ -104,6 +105,7 @@ public class StreamDemoTest {
 
     @Test
     public void shouldGroupAliveStarkByOrigin() {
-        fail("Implement Me !");
+        starkFamily.stream()
+                .filter(Person::isAlive);
     }
 }
