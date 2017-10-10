@@ -63,12 +63,13 @@ public class StreamDemoTest {
 
     @Test
     public void shouldPrintAliveStarkFamily(){
-        fail("Implement Me !");
+        starkFamily.stream().filter(p -> p.isAlive()).forEach(p -> System.out.println(p.toString()));
     }
 
     @Test
     public void shouldPrintAliveStarkFamilyWithReference(){
-        fail("Implement Me !");
+        starkFamily.stream().filter(Person::isAlive).forEach(p -> System.out.println(p.toString()));
+
     }
 
 }
