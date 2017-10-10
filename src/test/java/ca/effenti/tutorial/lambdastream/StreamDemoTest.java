@@ -90,4 +90,11 @@ public class StreamDemoTest {
     public void shouldReturnStarkFamilyFirstNameConcat() {
         fail("Implement Me !");
     }
+
+    @Test
+    public void shouldReturnStarkFamilyConcatCollectors() {
+        fail("Implement Me !");
+    }
+
+
 }
