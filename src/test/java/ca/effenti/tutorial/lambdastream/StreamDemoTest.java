@@ -88,6 +88,10 @@ public class StreamDemoTest {
 
     @Test
     public void shouldReturnStarkFamilyFirstNameConcat() {
-        fail("Implement Me !");
+        starkFamily.stream()
+                .map(Person::getFirstname)
+                .map(firstname ->  String.format("%10s", firstname) )
+                .reduce(String::concat)
+                .ifPresent(System.out::println);
     }
 }
