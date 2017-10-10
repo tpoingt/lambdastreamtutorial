@@ -46,18 +46,17 @@ public class StreamDemoTest {
     }
 
     @Test
-    @Ignore
     public void youReallyKnowNothing(){
-        Stream.of("Rickon", "Bran", "Arya", "Sansa", "Jon", "??")
-                .map(name -> {
-                    System.out.println(name + " is a Stark !");
-                    return name;
+        starkFamily.stream()
+                .map(person -> {
+                    System.out.println(person.getFirstname() + " is a Stark !");
+                    return person;
                 }).findFirst();
     }
 
 
     @Test
     public void shouldPrintStarkFamily() {
-        fail("Implement Me !");
+        starkFamily.stream().forEach(System.out::println);
     }
 }
