@@ -82,7 +82,12 @@ public class StreamDemoTest {
     }
 
     @Test
-    public void shouldReturnStarkFamilyUpperCase() {
+    public void shouldPrintStarkFamilyUpperCase() {
+        fail("Implement Me !");
+    }
+
+    @Test
+    public void shouldReturnStarkFamilyFirstNameConcat() {
         fail("Implement Me !");
     }
 }
