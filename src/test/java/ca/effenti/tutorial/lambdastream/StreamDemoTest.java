@@ -1,14 +1,12 @@
 package ca.effenti.tutorial.lambdastream;
 
-import org.junit.Assert;
 import org.junit.Test;
 
 import java.util.List;
-import java.util.stream.Stream;
 
 import static ca.effenti.tutorial.lambdastream.Sex.FEMALE;
 import static ca.effenti.tutorial.lambdastream.Sex.MALE;
-import static org.junit.Assert.*;
+import static org.junit.Assert.fail;
 
 
 public class StreamDemoTest {
