@@ -4,8 +4,9 @@ import org.junit.Ignore;
 import org.junit.Test;
 
 import java.util.List;
-import java.util.stream.Stream;
 
+import static ca.effenti.tutorial.lambdastream.Origin.GOT;
+import static ca.effenti.tutorial.lambdastream.Origin.MARVEL;
 import static ca.effenti.tutorial.lambdastream.Sex.FEMALE;
 import static ca.effenti.tutorial.lambdastream.Sex.MALE;
 import static org.junit.Assert.fail;
@@ -14,13 +15,13 @@ import static org.junit.Assert.fail;
 public class StreamDemoTest {
 
     List<Person> starkFamily = List.of(
-            new Person("Stark", "Rickon", MALE, 11, false),
-            new Person("Stark", "Brandon", MALE, 16),
-            new Person("Stark", "Arya", FEMALE, 17),
-            new Person("Stark", "Sansa", FEMALE, 19),
-            new Person("Snow", "Jon", MALE, 22),
-            new Person("Stark", "Robb", MALE, 19, false),
-            new Person("Stark", "Tony", MALE, 47)
+            new Person("Stark", "Rickon", MALE, GOT, 11, false),
+            new Person("Stark", "Brandon", MALE, GOT, 16),
+            new Person("Stark", "Arya", FEMALE, GOT, 17),
+            new Person("Stark", "Sansa", FEMALE, GOT, 19),
+            new Person("Snow", "Jon", MALE, GOT, 22),
+            new Person("Stark", "Robb", MALE, GOT, 19, false),
+            new Person("Stark", "Tony", MALE, MARVEL, 47)
     );
 
     @Test
@@ -97,7 +98,12 @@ public class StreamDemoTest {
     }
 
     @Test
-    public void shouldGetStarkAgeStats(){
+    public void shouldGetStarkAgeStats() {
+        fail("Implement Me !");
+    }
+
+    @Test
+    public void shouldGroupAliveStarkByOrigin() {
         fail("Implement Me !");
     }
 }

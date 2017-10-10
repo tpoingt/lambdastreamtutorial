@@ -7,21 +7,24 @@ public class Person {
     private final String lastname;
     private final String firstname;
     private final Sex sex;
+    private final Origin origin;
     private int age;
 
     private boolean alive = true;
 
-    public Person(String lastname, String firstname, Sex sex, int age) {
+    public Person(String lastname, String firstname, Sex sex, Origin origin, int age) {
         this.lastname = lastname;
         this.firstname = firstname;
         this.sex = sex;
+        this.origin = origin;
         this.age = age;
     }
 
-    public Person(String lastname, String firstname, Sex sex, int age, boolean alive) {
+    public Person(String lastname, String firstname, Sex sex, Origin origin, int age, boolean alive) {
         this.lastname = lastname;
         this.firstname = firstname;
         this.sex = sex;
+        this.origin = origin;
         this.age = age;
         this.alive = alive;
     }
