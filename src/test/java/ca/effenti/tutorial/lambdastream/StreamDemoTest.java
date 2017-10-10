@@ -105,7 +105,6 @@ public class StreamDemoTest {
 
     @Test
     public void shouldGroupAliveStarkByOrigin() {
-        starkFamily.stream()
-                .filter(Person::isAlive);
+        fail("Implement Me !");
     }
 }
