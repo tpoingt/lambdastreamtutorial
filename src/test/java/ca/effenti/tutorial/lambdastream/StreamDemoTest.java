@@ -1,6 +1,5 @@
-package java.ca.effenti.tutorial.lambdastream;
+package ca.effenti.tutorial.lambdastream;
 
-import ca.effenti.tutorial.lambdastream.Person;
 import org.junit.Test;
 
 import java.util.List;
@@ -25,14 +24,5 @@ public class StreamDemoTest {
 
 
 
-    @Test
-    public void youKnowNothing(){
-        Stream.of("Rickon", "Bran", "Arya", "Sansa", "Jon", "??")
-                .map(name -> {
-                    System.out.println(name + " is a Stark !");
-                    return name;
-                });
-
-    }
 
 }
