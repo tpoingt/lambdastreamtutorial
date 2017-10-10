@@ -47,7 +47,7 @@ public class StreamDemoTest {
 
     @Test
     @Ignore
-    public void youReallyKnowNothing(){
+    public void youReallyKnowNothing() {
         starkFamily.stream()
                 .map(person -> {
                     System.out.println(person.getFirstname() + " is a Stark !");
@@ -62,13 +62,27 @@ public class StreamDemoTest {
     }
 
     @Test
-    public void shouldPrintAliveStarkFamily(){
+    public void shouldPrintAliveStarkFamily() {
         fail("Implement Me !");
     }
 
     @Test
-    public void shouldPrintAliveStarkFamilyWithReference(){
+    public void shouldPrintAliveStarkFamilyWithReference() {
         fail("Implement Me !");
     }
 
+    @Test
+    public void shouldPrintAliveMaleStarkFamilyOneFilter() {
+        fail("Implement Me !");
+    }
+
+    @Test
+    public void shouldPrintAliveMaleStarkFamilyTwoFilters() {
+        fail("Implement Me !");
+    }
+
+    @Test
+    public void shouldReturnStarkFamilyUpperCase() {
+        fail("Implement Me !");
+    }
 }
