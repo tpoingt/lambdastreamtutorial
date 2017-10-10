@@ -3,7 +3,9 @@ package ca.effenti.tutorial.lambdastream;
 import org.junit.Ignore;
 import org.junit.Test;
 
+import java.util.IntSummaryStatistics;
 import java.util.List;
+import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 import static ca.effenti.tutorial.lambdastream.Sex.FEMALE;
@@ -93,8 +95,16 @@ public class StreamDemoTest {
 
     @Test
     public void shouldReturnStarkFamilyConcatCollectors() {
-        fail("Implement Me !");
+        String result = starkFamily.stream()
+                .map(Person::getFirstname)
+                .collect(Collectors.joining(", ", "[", "]"));
+        System.out.println(result);
     }
 
-
+    @Test
+    public void shouldGetStarkAgeStats(){
+        IntSummaryStatistics result = starkFamily.stream()
+                .collect(Collectors.summarizingInt(Person::getAge));
+        System.out.println(result.getAverage());
+    }
 }
