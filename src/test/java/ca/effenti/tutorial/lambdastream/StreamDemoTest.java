@@ -1,8 +1,10 @@
 package ca.effenti.tutorial.lambdastream;
 
+import org.junit.Ignore;
 import org.junit.Test;
 
 import java.util.List;
+import java.util.stream.Stream;
 
 import static ca.effenti.tutorial.lambdastream.Sex.FEMALE;
 import static ca.effenti.tutorial.lambdastream.Sex.MALE;
@@ -28,6 +30,18 @@ public class StreamDemoTest {
     @Test
     public void shouldCreateSimplePrintlnLambdaWithBracket(){
         fail("Implement Me !");
+    }
+
+
+    @Test
+    @Ignore
+    public void youKnowNothing(){
+        starkFamily.stream()
+                .map(name -> {
+                    System.out.println(name + " is a Stark !");
+                    return name;
+                });
+
     }
 
 
