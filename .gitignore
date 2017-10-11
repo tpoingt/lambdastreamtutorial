@@ -1,1 +1,4 @@
-.lambdastream.iml
+.idea/
+lambdastream.iml
+src/main/resources/
+target/
