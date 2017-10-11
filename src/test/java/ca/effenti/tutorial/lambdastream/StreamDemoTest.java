@@ -4,6 +4,7 @@ import org.junit.Ignore;
 import org.junit.Test;
 
 import java.util.List;
+import java.util.function.Consumer;
 import java.util.stream.Stream;
 
 import static ca.effenti.tutorial.lambdastream.Sex.FEMALE;
@@ -25,12 +26,16 @@ public class StreamDemoTest {
 
     @Test
     public void shouldCreateSimplePrintlnLambda() {
-        fail("Implement Me !");
+        Consumer<Person> starkConsumer = aStark -> System.out.println(aStark.getFirstname() + " is a stark !");
+        starkConsumer.accept(starkFamily.get(0));
     }
 
     @Test
     public void shouldCreateSimplePrintlnLambdaWithBracket() {
-        fail("Implement Me !");
+        Consumer<Person> starkConsumer = aStark -> {
+            System.out.println(aStark.getFirstname() + " is a stark !");
+        };
+        starkConsumer.accept(starkFamily.get(0));
     }
 
 
