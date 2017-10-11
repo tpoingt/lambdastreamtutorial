@@ -4,7 +4,6 @@ import org.junit.Ignore;
 import org.junit.Test;
 
 import java.util.List;
-import java.util.stream.Collectors;
 
 import static ca.effenti.tutorial.lambdastream.Origin.GOT;
 import static ca.effenti.tutorial.lambdastream.Origin.MARVEL;
@@ -15,7 +14,7 @@ import static org.junit.Assert.fail;
 
 public class StreamDemoTest {
 
-    List<Person> starkFamily = List.of(
+    private List<Person> starkFamily = List.of(
             new Person("Stark", "Rickon", MALE, GOT, 11, false),
             new Person("Stark", "Brandon", MALE, GOT, 16),
             new Person("Stark", "Arya", FEMALE, GOT, 17),
